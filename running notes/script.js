@@ -1,0 +1,1 @@
+console console.log(linking js to html);

@@ -1,0 +1,74 @@
+<!Doctype Html>
+<html>
+<head> 
+<title>Agriculture Development</title>
+<style>
+	body{ background: url(image.jpg) no-repeat; 
+		background-size:cover;
+		}
+	ul li{
+	width:80px;
+	float:right;
+	text-align:center;
+	border:1px solid white;
+	background-color:black;
+	opacity:0.8;
+	font-family: arial;
+	padding:7px;
+	margin-right:4px;
+	}
+	ul li a{
+	text-decoration:none; 
+	color:white; 
+	size:bold
+	}
+	.text{
+	background-color:green;
+	}
+	ul li:hover{
+	background-color:green;
+	}
+
+	.h3{
+	position:absolute;
+	left:10%;
+	top:20%
+	color:white;
+	font-size:50px;
+	font-family:arial;
+	text-transform:uppercase; text-shadow:1px 1px 1px;
+	}
+
+.h2{
+	position:absolute;
+	left:20%;
+	Top:18%; color:black; font-family:arial; font-size:14px; background-color:green;
+	}
+
+.txt{
+	position:absolute; 
+	left:10%;
+	top: 66%; color: white;
+	}
+
+ </style>
+</head>
+<body>
+	<ul type="none"> 
+		<li><a href= "">Contact</a></li>
+		<li><a href= "">About Us</a></li>
+		<li><a href= "">Pricing</a></li>
+		<li><a href= "">Services</a></li>
+		<li><a href= "">Blogs</a></li>
+		<li class="text"><a href= "">Home</a></li>
+	</ul>
+	<h3>Innavatiion</h3>
+	<h2>We Create opportunies<h2>
+
+	<div class= "txt"><h1> This website contains Agriculture details:<h1></div>
+                      
+	<!--<div class="txt">
+	This website contains Agriculture details.</div>-->
+
+ </body>
+ </html>

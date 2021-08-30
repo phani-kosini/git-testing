@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM quiries</title>
+</head>
+<body>
+    <div>
+        <p id="parent">Hello Word</p>
+        <p>Hello Word1</p>
+        <p class="parent2" onclick="clickfunction()">Hello Word2</p>
+        <p>Hello Word3</p>
+    </div>
+
+    <script src="../New folder/dompractice.js"></script>
+    <script>
+        var parentdom = document.getElementById('parent');
+        parentdom.style.backgroundColor = "red";
+
+        function clickfunction(){
+
+        document.getElementsByClassName('parent2').style.color = "red";
+
+            // var changefont = document.getElementsByClass;
+        //  document.getElementsByClassName('parent2').style.background-colot ="red";
+        
+        }
+    </script>
+
+  
+
+    </body>
+</html>

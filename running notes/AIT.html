@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT </title>
+    <script src="https://kit.fontawesome.com/c25fb8739e.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+        }
+
+        .d-flex {
+            display: flex;
+            background-color: #343a34;
+            font-size: 17px;
+            padding: 10px;
+        }
+
+
+        .bar {
+            display: flex;
+            width: 100%;
+
+
+        }
+
+        .d-flex img {
+            height: 50px;
+            width: 166px;
+            align-content: center;
+        }
+
+        .links {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            padding: 8px 20px;
+            list-style-type: none;
+
+        }
+
+        .bar li {
+            padding: 2px 20px;
+
+        }
+
+        .bar li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .bar li a:hover {
+            color: #FF4500;
+
+        }
+
+        /*navbar*/
+        .d-flexx {
+            display: flex;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            background-color: white;            
+              
+        }
+
+        .d-flexx ul {
+            display: flex;
+        
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #727171;
+            border-radius: 25px;       
+
+        }
+
+        .navbar li a:hover {
+            background: #FF4500;
+
+        }
+
+        .navbar {
+            display: flex;
+            list-style-type: none;
+            align-content: center;
+            color: #727171;
+            justify-content: space-around;
+            width: 100%;
+                    
+            
+        
+
+        }
+
+        .d-flexx li {
+            display: flex;
+            padding: 10px;
+            font-size: 17px;
+            
+            
+
+        }
+
+        a {
+            text-decoration: none;
+            border-radius: 35px;
+
+        }
+
+        /*banner starts*/
+        .banner img {
+
+            width: 100%;
+            height: 50vh;
+        }
+
+        /*BANNERBAR*/
+        .BANNERBAR {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+            bottom: 70px;
+            line-height: 1.5rem;
+
+
+        }
+
+        .BANNERBAR div {
+            display: flex;
+            font-size: 18px;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 0px 15px 1px;
+
+
+        }
+
+        .BANNERBAR div a:hover {
+            color: white;
+
+        }
+
+        .card:hover {
+            background: #b15736;
+        }
+
+        .a {
+            padding: 30px;
+        }
+
+        /* card starts*/
+        .row {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;           
+            
+        }
+        .card {
+            /* width: calc(100%/4); */
+            width: 20vw;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px;
+            margin: 10px;
+  
+        }
+        
+
+        .trending__courses .card {
+            /* width: calc(100%/4); */
+            /*width: 20vw;*/
+            background: #fff;
+            box-shadow: 0px 0px 0px 1px;
+            min-height: 235px;
+            
+            
+            
+        }
+
+        .card-heading {
+                        padding: 10px 10px;
+            color: #fff;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            display: flex;
+            min-height: 12vh;
+            font-size: 20px;
+        }
+        .card-body{
+            min-height: 10vh;
+        }
+        .card-footer{
+            min-height: 10vh;            ;
+        }
+        .card-heading span i{
+            font-size: 20px;
+        }
+        .card p{
+            font-size: 15px;
+        }
+        .heading{
+            padding: 0 0 0 30px
+        }
+        .container{
+            position: relative;
+            bottom: 30px;
+
+        }
+        /* recent additions*/
+        .row_recent {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            flex-wrap: wrap;}
+
+            .card1 {
+            /* width: calc(100%/4); */
+            width: 20vw;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px;
+            margin: 10px;}
+
+            .card-heading1 {
+            text-align: center;
+            padding: 10px 10px;
+            color: #fff;
+            background: linear-gradient(to right, #92FE9D, #00C9FF);
+            display: flex;
+            min-height: 13vh
+            }
+            .card-heading2 {
+            text-align: center;
+            padding: 10px 10px;
+            color: #fff;
+            background: linear-gradient(to left, #1CB5E0, #000046);
+            display: flex;
+            min-height: 13vh
+            }
+            .card-heading3 {
+            text-align: center;
+            padding: 10px 10px;
+            color: #fff;
+            background: linear-gradient(to left, #f2fcfe, #1c92d2);
+            display: flex;
+            min-height: 13vh
+            }
+            .card-heading4 {
+            text-align: center;
+            padding: 10px 10px;
+            color: #fff;
+            background: linear-gradient(to left, #feb47b, #ff7e5f);
+            display: flex;
+            min-height: 13vh
+            }
+
+            .card2 {
+            /* width: calc(100%/4); */
+            width: 20vw;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px;
+            margin: 10px;}
+            .card3 {
+            /* width: calc(100%/4); */
+            width: 20vw;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px;
+            margin: 10px;}
+            .card4 {
+            /* width: calc(100%/4); */
+            width: 20vw;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px;
+            margin: 10px;}
+
+            .recent__courses .card1 {
+            /* width: calc(100%/4); */
+            /*width: 20vw;*/
+            background: #fff;
+            box-shadow: 0px 0px 0px 1px;
+            min-height: 235px;
+            }
+            /* Categories starts*/
+
+            .container__Categories{
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+            }
+            
+        
+    </style>
+</head>
+
+<body>
+    <div class=d-flex>
+
+        <div><img src="../PHANI_AIT FLEX LAYOUT/pics/AIT-white.jpg" alt=""></div>
+
+        <div class="bar">
+            <ul class="links">
+                <li><a href="#">Corporate Training </a></li>
+                <li><a href="#">Placement pag</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="d-flexx">
+        <div>
+            <li><a href="#">Courses</a></li>
+        </div>
+        <ul class="navbar">
+
+            <li><a href="#">UI Development</a></li>
+            <li><a href="#">Angular</a></li>
+            <li><a href="#">ReactJS</a></li>
+            <li><a href="#">VUEJS</a></li>
+            <li><a href="#">MEAN</a></li>
+            <li><a href="#">MERN</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">IONIC</a></li>
+            <li><a href="#">ReactNative</a></li>
+            <li><a href="#">WEB Dev</a></li>
+
+
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="bannerlogo">
+            <img src="../PHANI_AIT FLEX LAYOUT/pics/angular_training.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <div CLASS="BANNERBAR">
+        <div class="card"><a href="#">BECOME A UI DEVELOPER Know More></a></div>
+        <div class="card"><a href="#">BECOME A UI DEVELOPER Know More></a></div>
+        <div class="card"><a href="#">BECOME A UI DEVELOPER Know More></a></div>
+
+    </div>
+
+    <div class="container trending__courses">
+        <div class="heading">
+            
+            <h1>TREDING COURSES</h1>
+
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-heading ">
+                    <span class="icon..">
+                        <i class="fab fa-angular"></i>
+                    </span>
+                    <div>
+                        <h5>ANGULAR
+                            <br> DEVELOPMENT 
+                            <br>COURSE</h5>
+
+                    </div>
+                    
+                </div>
+                <div class="card-body">
+                    <p>Angular is popular for making dynamic applications and its information official and reliance
+                        infusion includes altogether lessen the measure of code that should be composed.</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <span>
+                        <i class="fab fa-react"></i>
+                    </span>
+                    <h5>REACT DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>Achievers IT React JS Certification Course in Bangalore. We teach you detailed explanations of
+                        what is React Js, why we use React Js, What is JSX, Unidirectional data flow, React Components,
+                        React Hooks and React Router,</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                    
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <h5>MEAN STACK DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>"MEAN Stack Front To Back". In this course we will build an in depth full stack social network
+                        application using Angular, Express, React, Redux and MongoDB along with ES6+. We will start with
+                        a blank text editor and end with a deployed full stack application.</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <span></span>
+                    <h5>MERN STACK DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>"MERN Stack Front To Back". In this course we will build an in depth full stack social network
+                        application using Node.js, Express, React, Redux and MongoDB along with ES6+. We will start with
+                        a blank text editor and end with a deployed full stack application.</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <h5>WEB DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>We are one of the top web training institutes in Bangalore offering advanced web development
+                        courses to our students.</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <h5>DIGITAL MARKETING COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>The future for digital marketing is promising, and its scope in the upcoming future is that it
+                        may replace all other standard forms of marketing soon. Benefits such as enhancing brand
+                        loyalty, reaching out to a wider audience</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <span>
+                        <i class="fab fa-react"></i>
+                    </span>
+                    <h5>REACT NATIVE DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>React Native has created a lot of excitement in the IT industry because of its cross-platform
+                        nature Developers can reuse the code between Android, iOS with minimal effort. AchieversIT
+                        institute brings you the opportunity to master React Native and embark on a career that will be
+                        the demand of the future</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-heading">
+                    <h5>ICONIC CERTIFICATION COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>Our course, you will master tips and best practices for Ionic 4 & Ionic 5 that you can
+                        immediately implement to build high quality apps. Our course covers a wide variety of topics
+                        from increasing app performance, to building custom native plugins, to securing your apps. It
+                        a practical, hands-on experience that will take your app-building skills to the next level.</p>
+                        <hr>
+                        <div class="card-footer">
+                            <a href="#">Reviews</a>
+                            <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            5.0(292)
+                        </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- recent additions-->
+    <div class="container recent__courses">
+        <div class="heading">
+            
+            <h1>RECENT ADDITIONS</h1>
+
+        </div>
+        <div class="row_recent">
+            <div class="card1">
+                <div class="card-heading1">
+                    <span>
+                        <i class="fab fa-angular"></i>
+                    </span>
+                    <h5>ANGULAR DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>Angular is popular for making dynamic applications and its information official and reliance
+                        infusion includes altogether lessen the measure of code that should be composed.</p>
+                        <hr>
+                    <a href="">Reviews</a>
+
+                    <br>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            4.6(192)
+
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card-heading2">
+                    <span>
+                        <i class="fab fa-angular"></i>
+                    </span>
+                    <h5>ANGULAR DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>Angular is popular for making dynamic applications and its information official and reliance
+                        infusion includes altogether lessen the measure of code that should be composed.</p>
+                        <hr>
+                        <a href="">Reviews</a>
+
+                        <br>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                4.3(146)
+
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card-heading3">
+                    <span>
+                        <i class="fab fa-angular"></i>
+                    </span>
+                    <h5>ANGULAR DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>Angular is popular for making dynamic applications and its information official and reliance
+                        infusion includes altogether lessen the measure of code that should be composed.</p>
+                        <hr>
+                        <br>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        4.6(184)
+
+                </div>
+
+            </div>
+            <div class="card2">
+                <div class="card-heading4">
+                    <span>
+                        <i class="fab fa-angular"></i>
+                    </span>
+                    <h5>ANGULAR DEVELOPMENT COURSE</h5>
+                </div>
+                <div class="card-body">
+                    <p>Angular is popular for making dynamic applications and its information official and reliance
+                        infusion includes altogether lessen the measure of code that should be composed.</p>
+                        <hr>
+                    <a href="">Reviews</a>
+                    <br>
+                     <span class="star">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        4.8(237)
+                     </span>
+
+                </div>
+
+            </div>  
+        
+        </div>
+    </div>
+    <div class="container__Categories">
+        <div class="heading">
+            
+            <h1>Discover Top Categories</h1>
+
+        </div>
+        <div class="Categories">
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+            <div class="card1.c">
+                <span><i class="fab fa-angular"></i></span>
+                <br>          
+                <h5>DevOps</h5>
+                
+                
+
+            </div>
+
+        
+        </div>
+    </div>
+    <div>
+           <div><i class="fab fa-whatsapp"></i></div>
+           <div></div>
+    </div>
+
+</body>
+
+</html>

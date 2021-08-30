@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .flex-container{
+            display: flex;
+            background-color: cadetblue;
+            justify-content: flex-end;
+        }
+        .flex-container>div{
+            background-color:white;
+            width: 100px;
+            margin: 10px;
+             } */
+             .d-flex{
+                 display: flex;
+             }
+             .flex-container-fluid{
+                background-color: cadetblue;  
+                padding : 30px 5px;
+             }
+             
+             .child-flex{
+                 display: flex;
+                 justify-content: flex-end;
+                 width: 100%;
+                 font-size: 18px;
+             }
+             .child-flex ul li{
+                 padding: 0px 12px ;
+                 list-style: none;
+                 /* text-decoration: none; */
+                 /* color:white; */
+             }
+             .child-flex ul li a{
+                 text-decoration: none;
+                 color: white;
+             }
+
+             .child-flex ul li a:hover{
+                 color: #000;
+             }
+             .d-flex{
+            display: flex;        
+        }
+        .parent{
+            background-color: silver;
+            padding: 10px ;
+            width: 98.7%;
+        }
+        .child  a{
+            text-decoration: none;
+            color: white;
+            
+            
+            /* list-style: none; */
+        }
+        .child ul li {
+            list-style-type: none;
+            padding:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div>
+    <div class=flex-container>
+        <div>corporate training</div>
+        <div>Placement page</div>
+        <div>Reviews</div>
+        <div>Blog</div>
+
+    </div>
+</div> -->
+
+<div class="d-flex flex-container-fluid">
+    <div>
+        <div>Home</div>
+    </div>
+
+    <div class="child-flex">
+        <ul class="d-flex">
+            <li><a href="#">Corpotate Training</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Placements</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        
+    </div>
+</div>
+<!-- second header -->
+<div class="parent">
+
+    <div class="child">
+
+       <ul class="d-flex">        
+           <li><a href="#" >Course</a></li>
+           <li><a href="#" >UI Development</a></li>
+           <li><a href="#" >Angular</a></li>
+           <li><a href="#" >reactJS</a></li>
+           <li><a href="#" >VUEJS</a></li>
+           <li><a href="#" >MEAN</a></li>
+           <li><a href="#" >MERN</a></li>
+           <li><a href="#" >Digital Marketing</a></li>
+           <li><a href="#" >Python</a></li>
+           <li><a href="#" >IONIC</a></li>
+           <li><a href="#" >ReactNative</a></li>
+           <li><a href="#" >WEBDEV</a></li>
+       </ul>
+        
+       </div>
+   </div>
+    
+</body>
+</html>

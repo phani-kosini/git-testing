@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout practice</title>
+    <style>
+body{
+    margin: 0px;
+}
+  
+
+.d-flex{
+    background-color: rgb(16, 24, 24);
+    padding: 10px 15px; 
+    display: flex;    
+    
+}
+.bar{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: white;
+    
+}
+.links{
+    display: flex;
+    list-style: none;
+    
+}
+
+.links li{
+    padding: 2px 20px;
+}
+.logo img{
+    width: 200px;
+    /*logobar end*/
+}
+.d-flex2{
+    background-color:#fff;
+    padding: 30px 15px; 
+    display: flex; 
+    border: 1px solid black;
+    }
+.homebanner{
+    background-color:#fff;
+    
+    border: 1px solid black;
+    
+    
+}
+.banner{
+    height: 40vh;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.subbanner{    
+    
+    display: flex;
+    border: 1px solid black;
+    padding:30px;
+    justify-content: space-around;
+    position: relative;
+        
+}
+.subbanner div{
+    
+    border: 1px solid red;
+    padding: 16px 16px;
+       
+}
+.treding{
+    display: flex;
+    border: 1px solid black;
+    padding: 30vh
+ 
+    
+}
+
+.courses div{
+    
+    padding: 10px;
+    border:1px solid black;
+    
+    
+}
+
+        /*card section starts */
+        .d-flexx{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        
+        .card{
+            width: calc(100%/5);
+            height: 100%;
+            border: 1px solid black;
+            margin: 8px;
+            min-height: 320px;
+            /* justify-content: space-around; */
+        }
+        .card-header{
+            height: 100px;
+            background: linear-gradient(to right, #fc6767,#ec008c);
+        }
+        .card-body .body-description{
+            font-size: 13px;
+        }
+         /*card section ends */
+
+    
+        /*CARD SECTION RECENT ADDITION starts*/
+        .d-flex3{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .cards{
+            width: calc(100%/4);
+            height: 100%;
+            border: 1px solid black;
+            margin: 5px;
+            min-height: 320px;
+        }
+        /*CARD SECTION RECENT ADDITION starts*/
+        
+        /* RECENT ADDITIONS starts*/
+        .ADDITION{
+        
+            border: 1px solid red;
+        }
+                .additions-logo{
+            justify-content: space-around;
+            display: flex;
+            width:100%;
+                        
+        }
+        /* RECENT ADDITIONS starts*/
+        
+
+
+
+</style>
+</head>
+<!-- header end-->
+<!--bodystarts-->
+<body>
+    <!-- logo and course details srats-->
+    <div class="d-flex">
+        <div class="logo">
+            <img src="../AIT-white.jpg">
+        </div>
+        
+        <div class="bar">
+
+            <ul class="links">
+
+                <li> Corporate Training</li>
+                <li>Placement page</li>
+                <li>Contact Us</li>
+                <li>Blog</li> 
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="d-flex2">
+        <div class="bar2">
+
+            <ul class="links">
+
+                <li> UI DEVELOPMENT</li>
+                <li>Angular</li>
+                <li >ReactJS </li>
+                <li >VUEJS</li> 
+                <li >MEAN</li>
+                <li >MERN</li>
+                <li >Digital Marketing</li>
+                <li >Python </li>
+                <li >IONIC</li>
+                <li >React Native</li>
+                <li >WEB DEV</li>
+
+
+            </ul>
+        </div>
+
+    </div>
+    <!-- logo and course details ends-->
+
+    <!-- banner starts-->
+
+    <div>
+        <div class="homebanner" >
+            <div class="banner"> 
+            <img src="../banner.png" >
+            </div>             
+
+
+        </div>
+
+        <div class="subbanner" >
+              <div class="UI developer">Become a UI developer </div>
+              <div class="Angular developer">Become a Angular developer </div>
+              <div class=" React developer">Become a React developer </div>
+
+        </div>
+
+
+
+    </div>
+    <!--banner ends-->
+
+    <!--Treding courses starts-->
+    
+
+    <div class="parent d-flexx">
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi?</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header d-flexx">
+                <span class="header-icon">
+
+                </span>
+                <h3>Angular Training</h3>
+            </div>
+            <div class="card-body">
+                <p class="body-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, facere aliquid? Aliquid, sequi? Tempore odit architecto a! Eum libero dolorum minima exercitationem est assumenda corrupti molestias cum temporibus autem iure doloremque neque nisi perspiciatis veniam officiis, officia reiciendis sint beatae at laudantium nihil reprehenderit. Nulla ratione maxime dolorum sapiente, distinctio ut. Vitae facere voluptatum laudantium nobis cum sint perferendis omnis!</p>
+                <div class="review-div">
+                    <p>reviews</p>
+                    <div class="review-data">
+                        <div class="rating-student">
+                            5.0 (270)
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Treding courses ends-->
+
+    <!-- RECENT ADDITIONS starts-->
+    <div class="ADDITION">
+            <h3 >RECENT ADDITIONS</h3>
+        <div class="additions-logo">
+            <img src="../pics/ui dvp.jfif" alt="">
+            <img src="../pics/vuejs.png" alt="">
+            <img src="../pics/wp.png" alt="">
+            <img src="../pics/python.jfif" alt="">
+
+        </div>
+    
+    </div>
+    <!-- RECENT ADDITIONS close-->
+
+    
+    
+    
+</body>
+<!-- body ends-->
+</html>
