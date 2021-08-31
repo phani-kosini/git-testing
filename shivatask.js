@@ -188,7 +188,7 @@ let sentence = ' The quick brown fox jumps over the lazy dog.';
 
 
  const sum = 0; 
- for  (const i = 0; i < 1000; i++) { if (i % 3 === 0 || i % 5 === 0) { sum += i; } } 
+ for (const i = 0; i < 1000; i++) { if (i % 3 === 0 || i % 5 === 0) { sum += i; } } 
  console.log(sum);
 
  
